@@ -80,7 +80,7 @@
   
 /* À propos */
 .section-apropos {
-  background-image: url(/img/gazon.jpg);
+  background-image: url(img/gazon.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,7 +247,6 @@
 .footer {
   background: var(--couleur-principale);
   padding: 30px 0px;
-  font-family: Arial, sans-serif;
   text-align: center;
 }
 
