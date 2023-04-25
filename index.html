@@ -9,20 +9,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <!-- Menu horizontal -->
-  <nav class="menu">
-    <a href="#top"> <img src="/img/tree.png" alt="" width="80px" height="80px"> </a>
-    <a href="#a-propos">À propos</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
+  <header>
+    <div class="menu-toggle">&#9776;</div>
+    <nav class="menu">
+      <a href="#top"><img src="/img/logoartse.png" alt="" width="100px" height="100px"></a>
+      <div class="menu-links">
+        <a href="#a-propos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
   <!-- Section à propos -->
   <section id="a-propos" class="section section-apropos">
-    <div class="container">
+    <div class="contains">
       <h2>À propos de nous</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lectus quis magna varius faucibus. Nunc ultrices, ipsum in mollis elementum, nunc velit consequat odio, at eleifend libero mauris non leo. Morbi a enim tortor. Aenean sit amet massa a ante commodo imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce consectetur auctor justo in fringilla. Vivamus id nunc dapibus, venenatis tellus ac, suscipit est. Aenean malesuada pharetra tortor, vel dignissim nisl interdum non. Ut non nulla turpis. Donec convallis, nulla et pretium bibendum, massa mi blandit ante, sit amet ullamcorper quam nunc eu mauris. Sed tempor bibendum convallis. Integer euismod laoreet justo, in rutrum velit sagittis eu. Sed finibus est mauris, in bibendum ipsum egestas et. Nulla facilisi. Sed euismod ullamcorper interdum. Duis pulvinar in nulla in euismod. Nulla rutrum auctor turpis, eu lobortis justo accumsan eu.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel lectus quis magna varius faucibus. Nunc ultrices, ipsum in mollis elementum, nunc velit consequat odio, at eleifend libero mauris non leo. Morbi a enim tortor. Aenean sit amet massa a ante commodo imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce consectetur auctor justo in fringilla. Vivamus id nunc dapibus, venenatis tellus ac, suscipit est. </p>
     </div>
   </section>
 
@@ -46,28 +50,13 @@
           <h3>Service 3</h3>
           <p>Description du service 3.</p>
         </div>
-        <div class="service">
-          <img src="image-service-4.jpg" alt="Service 4">
-          <h3>Service 4</h3>
-          <p>Description du service 4.</p>
-        </div>
-        <div class="service">
-          <img src="image-service-5.jpg" alt="Service 5">
-          <h3>Service 4</h3>
-          <p>Description du service 4.</p>
-        </div>
-        <div class="service">
-          <img src="image-service-5.jpg" alt="Service 6">
-          <h3>Service 4</h3>
-          <p>Description du service 4.</p>
-        </div>
       </div>
     </div>
   </section>
   
   <!-- Section portfolio -->
   <section id="portfolio" class="section section-portfolio">
-    <div class="container">
+    <div class="pics">
       <h2>Notre portfolio</h2>
       <p>Voici quelques exemples de nos réalisations:</p>
       <img src="/img/arbustre.jpg" alt="Image de paysage">
@@ -76,36 +65,46 @@
     </div>
   </section>
 
-  <!-- Section contact -->
-  <section id="contact" class="section section-contact">
-    <div class="container">
-      <h2>Nous contacter</h2>
-      <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
-    <div>
-      <H2>emmanuelle</H2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates accusamus blanditiis iste, esse explicabo in eligendi aliquid ad laborum odit.</p>
-      <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore enim sapiente,</p>
+  <section id="contact-section">
+    <div class="contact-container">
+      <div class="map-section">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178788.19615527376!2d-73.8766791450049!3d45.559064210405836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQw!5e0!3m2!1sfr!2sca!4v1682355980009!5m2!1sfr!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <ul>
+            <p>Régions de Montréal,Rive-sud,Rive</p>
+            <li><i class="fa fa-phone"></i> (514)770-0003</li>
+            <li><i class="fa fa-envelope"></i> info@therapeuteexpert.com</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
+  
+
 
   <!-- Footer -->
-  <footer class="footer">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-envelope"></a>
-
-    <div class="container">
-      <p>Droit d'auteur © 2023 Paysagement Vert&Bleu.</p>
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="https://www.facebook.com/profile.php?id=100091646423129" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-google"></i></a>
+    <a href="mailto:agroymultiservices@gmail.com"><i class="fa fa-envelope"></i></a>
     </div>
-  </footer>
+
+    <div class="row">
+    <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p> © 2023 Arts e  Tous droits réservés || Designed By: f1016r </p>
+    </div>
+    </footer>
 
 </body>
 </html>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
